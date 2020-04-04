@@ -61,6 +61,12 @@ public class Multiplication {
             // TableDe(Integer.parseInt(args[0]));
             Multiplication table = new Multiplication(Integer.parseInt(args[0]));
             table.TableDe();
+
+            for (int i = 0; i < args.length; i++)
+            {
+                table.TableDe();
+            }
+
         }
 
     }
