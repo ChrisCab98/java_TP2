@@ -1,14 +1,22 @@
 public class CorrectionMultiplication {
 
-    public static void tableDe(int Nb) {
+    private int nb;
+
+    public CorrectionMultiplication(int pNb)
+     {
+         nb = pNb;
+     }
+
+    public void tableDe() {
         for (int i = 1; i <= 10; i++) {
-            System.out.println(i * Nb);
+            System.out.println(i * nb);
         }
     }
 
     public static void tableDeMultiplication() {
         for (int i = 1; i <= 10; i++) {
-            tableDe(i);
+            CorrectionMultiplication m = new CorrectionMultiplication(i);
+            m.tableDe();
         }
     }
 
